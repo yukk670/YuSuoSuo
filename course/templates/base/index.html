@@ -1,0 +1,1 @@
+{% load staticfiles %}<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <script src="{% static 'js/jquery-1.10.2.min.js' %}"></script></head><body>    {% for problem in problemset %}        {{ problem.describe }}        {% for answer in problem.answers %}            {{ answer }}        {% endfor %}    {% endfor %}</body></html>

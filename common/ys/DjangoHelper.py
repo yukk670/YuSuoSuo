@@ -1,0 +1,1 @@
+def get_tar_locals(locals,*args):    """    根据字典中指定的值组合成新的字典    :param locals: 目标字典    :param args: 哪些键    :return: 新的字典    """    return {arg:locals[arg] for arg in args}
